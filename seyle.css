@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    font-family: sans-serif;
+    scrollbar-base-color: hsl(277, 64%, 61%);
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    border-radius: 10px;
+}
+
+.image-pe{
+    width: 100%;
+    height: 250px;
+    background-image: url("images/image-header-mobile.jpg");
+    background-color:  hsl(228, 45%, 44%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: hsl(277, 64%, 61%);
+    
+}
+
+.main-contain{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-header p{
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 25px;
+    width: 80%;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.main-header span{
+    color: hsl(277, 64%, 61%);
+}
+
+.anlyse{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    /* background-color: aqua; */
+}
+
+.anlyse div{
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.anlyse div:nth-child(3){
+    margin-bottom: 20px;
+}
+
+.anlyse div .calcul{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.sujet{
+    font-weight: 100;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (min-width: 1240px){
+    .container{
+        width: 60vw;
+        height: 350px;
+        flex-direction: row-reverse;
+        padding-left: 70px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    .image-pe{
+        width: 100%;
+        height: 350px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .main-contain{
+        padding-top: 30px;
+        display: block;
+    }
+
+    .anlyse{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        align-items: center;
+        text-align: left;
+    }
+
+    .anlyse div, .anlyse div:nth-child(3){
+        margin-bottom: 0px;
+        text-align: left;
+    }
+
+    .main-header p, h3{
+        text-align: left;
+        margin: 0px;
+    }
+
+    .main-header p{
+        margin-top: 20px;
+    }
+
+    .attribution{
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        transform: (-40%, -80%);
+    }
+
+    /* .image-pe{
+        height: 400px;
+    } */
+}
